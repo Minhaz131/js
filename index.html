@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.css">
+    <title>Javescript</title>
+</head>
+<body>
+    <h1>Welcome to my webpage</h1>
+    <div id="typed-strings">
+        <p>I am Minhaz</p>
+        <p>I am web designer and developer</p>
+        <p>And I am good boy in this world</p>
+    </div>
+    <!-- parallax -->
+    <div class="parallax" data-parallax="scroll" data-image-src="assets/img/1.png"></div>
+    <div class="parallax" data-parallax="scroll" data-image-src="assets/img/2.png"></div>
+    <div class="parallax" data-parallax="scroll" data-image-src="assets/img/3.png"></div>
+    <div class="parallax" data-parallax="scroll" data-image-src="assets/img/4.png"></div>
+    <div class="parallax" data-parallax="scroll" data-image-src="assets/img/5.png"></div>
+    <div class="parallax" data-parallax="scroll" data-image-src="assets/img/6.png"></div>
+    <div class="parallax" data-parallax="scroll" data-image-src="assets/img/7.png"></div>
+    <div class="parallax" data-parallax="scroll" data-image-src="assets/img/8.png"></div>
+    <div class="parallax" data-parallax="scroll" data-image-src="assets/img/9.png"></div>
+    <div class="parallax" data-parallax="scroll" data-image-src="assets/img/10.jpg"></div>
+    <div class="parallax" data-parallax="scroll" data-image-src="assets/img/11.jpg"></div>
+    <div class="parallax" data-parallax="scroll" data-image-src="assets/img/12.jpg"></div>
+    <!-- owl carousel -->
+    <div class="owl-carousel owl-theme">
+        <!-- slider -->
+        <img src="assets/img/1.png" alt="">
+        <img src="assets/img/2.png" alt="">
+        <img src="assets/img/3.png" alt="">
+        <img src="assets/img/4.png" alt="">
+        <img src="assets/img/5.png" alt="">
+        <img src="assets/img/6.png" alt="">
+        <img src="assets/img/7.png" alt="">
+        <img src="assets/img/8.png" alt="">
+        <img src="assets/img/9.png" alt="">
+        <img src="assets/img/10.jpg" alt="">
+        <img src="assets/img/11.jpg" alt="">
+        <img src="assets/img/12.jpg" alt="">
+        <!-- slider -->
+    </div>
+    <!-- owl carousel -->
+    <span id="typed"></span>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <!-- types js -->
+    <script src="assets/js/typed.js"></script>
+    <!-- parallax js -->
+    <script src="assets/js/parallax.js"></script>
+    <!--  owl carousel js -->
+    <script src="assets/js/owl.carousel.js"></script>
+    <script>
+        var typed = new Typed('#typed', {
+        stringsElement: '#typed-strings',
+        loop: true,
+        typeSpeed: 60,
+        backSpeed: 60,
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+        $(".owl-carousel").owlCarousel();
+        });
+    </script>
+</body>
+</html>
